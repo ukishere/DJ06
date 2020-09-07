@@ -10,3 +10,10 @@ class ReviewAdminForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ['car', 'title', 'text']
+
+# class ReviewAdminForm(forms.ModelForm):
+#     text = forms.CharField(widget=CKEditorWidget(), label='Текст')
+#
+#     class Meta:
+#         model = Review
+#         fields = ['car', 'title', 'text']
